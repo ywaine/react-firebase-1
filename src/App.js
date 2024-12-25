@@ -11,6 +11,13 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
   // your config
+  apiKey: "AIzaSyD0qxtj4xSs1I_jyIlH5DbMgfxEfE8qa84",
+  authDomain: "dynamo-bbcce.firebaseapp.com",
+  projectId: "dynamo-bbcce",
+  storageBucket: "dynamo-bbcce.firebasestorage.app",
+  messagingSenderId: "1087099786525",
+  appId: "1:1087099786525:web:ca5e080a272d93abe43df4",
+  measurementId: "G-Q9JL2X57DW",
 })
 
 const auth = firebase.auth();
@@ -25,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>👪🏾🧨💬 Use This If You Have Your Hand Up</h1>
         <SignOut />
       </header>
 
@@ -47,7 +54,7 @@ function SignIn() {
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      <p>Welcome to the Nyakasura Family Q&A podium! Ask good questions/Take notes.</p>
     </>
   )
 
@@ -99,7 +106,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>➤</button>
 
     </form>
   </>)
