@@ -1,0 +1,17 @@
+[debug] [2024-12-25T18:14:56.076Z] ----------------------------------------------------------------------
+[debug] [2024-12-25T18:14:56.080Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-12-25T18:14:56.080Z] CLI Version:   10.9.2
+[debug] [2024-12-25T18:14:56.080Z] Platform:      win32
+[debug] [2024-12-25T18:14:56.081Z] Node Version:  v12.22.12
+[debug] [2024-12-25T18:14:56.082Z] Time:          Wed Dec 25 2024 21:14:56 GMT+0300 (East Africa Time)
+[debug] [2024-12-25T18:14:56.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-25T18:14:56.233Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-25T18:14:56.234Z] > authorizing via signed-in user (tonyrubombora@gmail.com)
+[debug] [2024-12-25T18:14:56.234Z] [iam] checking project dynamo-bbcce for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-12-25T18:14:56.238Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dynamo-bbcce:testIamPermissions [none]
+[debug] [2024-12-25T18:14:56.239Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dynamo-bbcce:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-25T18:14:58.183Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dynamo-bbcce:testIamPermissions 200
+[debug] [2024-12-25T18:14:58.185Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dynamo-bbcce:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-25T18:14:58.189Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/dynamo-bbcce/serviceAccounts/dynamo-bbcce@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-12-25T18:14:58.190Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/dynamo-bbcce/serviceAccounts/dynamo-bbcce@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
